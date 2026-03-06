@@ -1,0 +1,9 @@
+# Ignore VS Code settings folders
+.vscode/
+**/.vscode/
+
+# Ignore Go module files
+go.mod
+
+# Ignore Go checksum files
+go.sum
