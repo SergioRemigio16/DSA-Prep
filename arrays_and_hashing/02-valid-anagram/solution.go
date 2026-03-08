@@ -35,5 +35,7 @@ func isAnagram(s string, t string) bool {
 }
 
 func main() {
-	println("Hello, World!")
+	var s = "racecar"
+	var t = "carrace"
+	println(isAnagram(s, t))
 }
