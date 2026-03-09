@@ -1,21 +1,53 @@
 package main
 
-func groupAnagrams(strings []string) [][]string {
+// n = number of words
+// s = word length
+// Time Complexity: O(n) * (O(s) + O(1)) + O(n) *O(s) = 2O(ns) = O(ns)
+// Space Complexity: O(n) * O(1) + O(n) = 2O(n) = O(n)
+func groupAnagrams(strs []string) [][]string {
+	// Every key contains all words that are anagrams
+	// Space : O(1)
+	anagramMap := make(map[[26]int][]string)
 	//go through every string in the array strings
-	for i, word := range strings {
-		// turn each string into a string array of size 27 with the frequency of each letter
-		var arr [27]int
-		arr[0] = i
-		for j, rune := range word {
-			arr[j] = rune
+	// Time: O(n)
+	// Space : O(n)
+	for _, word := range strs {
+		// turn each string into a string array of size 26 with the frequency of each letter
+		// Space : O(1)
+		var arr [26]int
+		// For every letter in the word
+		// Time: O(s)
+		// Space : O(1)
+		for _, rune := range word {
+			// increase the number of times this letter has appeared
+			arr[rune-97]++
 		}
+		// Time: O(1)
+		anagramMap[arr] = append(anagramMap[arr], word)
 	}
-	// The first index for the index position of the word in the strings array and 26 indices for the letters
-	// add that array into a hashmap
-	// iterate through hashmap and fill up [][]string that needs to be returned
-
-	return nil
+	solutionArray := [][]string{}
+	// Time: O(n)
+	// Space: O(n)
+	for _, value := range anagramMap {
+		// Time: O(s)
+		// Space: O(1)
+		solutionArray = append(solutionArray, value)
+	}
+	return solutionArray
 }
 
 func main() {
+	strs := []string{"act", "pots", "tops", "cat", "stop", "hat"}
+	solution := groupAnagrams(strs)
+	for _, anagrams := range solution {
+		for _, word := range anagrams {
+			print(word + " ")
+		}
+		println()
+	}
+	testStr := "hello World"
+	println(testStr[0])
+	println('a' - 97)
+	println('z' - 97)
+
 }

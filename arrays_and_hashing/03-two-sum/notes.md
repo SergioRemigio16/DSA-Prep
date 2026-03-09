@@ -1,7 +1,7 @@
 PROBLEM
 ------------------------------
 Title: Two Sum
-Difficulty: Easy
+Difficulty: 3/10
 Date Solved: 3/7/2026
 
 
