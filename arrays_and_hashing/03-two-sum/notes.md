@@ -47,5 +47,7 @@ Where this concept appears in real systems:
 
 ChatGPT Examples:
 -Token deduplication / caching: using a hash table to detect whether a token or embedding has already been processed.
+
 -Memory or object lookup tables: fast retrieval of objects by key rather than scanning arrays.
+
 -Rate limiting systems: quickly checking whether a request identifier already exists in a tracking structure.

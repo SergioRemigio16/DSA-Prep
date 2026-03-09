@@ -43,5 +43,7 @@ Where this concept appears in real systems:
 
 ChatGPT Examples:
 - Deduplication of events in distributed logging systems
+
 - Preventing duplicate job submissions in a task queue
+
 - Tracking unique user IDs in analytics pipelines

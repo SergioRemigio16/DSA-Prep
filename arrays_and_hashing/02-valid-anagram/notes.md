@@ -46,7 +46,11 @@ Frequency counting and hash maps appear frequently in data processing pipelines 
 
 ChatGPT Examples:
 -Detecting duplicate or equivalent records in data pipelines.
+
 -Text analytics (word frequency counting).
+
 -Log analysis where event frequencies are tracked.
+
 -Cache invalidation or request deduplication using hashed keys.
+
 -Security systems comparing normalized inputs (e.g., password or token validation patterns).

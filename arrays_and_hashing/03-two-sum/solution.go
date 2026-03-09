@@ -1,5 +1,7 @@
 package main
 
+// Time Complexity: O(n) + O(1) + O(2n) = O(3n) = O(n)
+// Space Complexity: O(n)
 func twoSum(nums []int, target int) []int {
 	nums_map := make(map[int]int)
 	// Add nums to a hashmap of (key int, count int)
@@ -9,6 +11,7 @@ func twoSum(nums []int, target int) []int {
 	}
 	// for every number in nums
 	// Time: O(n)
+	// Space: O(n)
 	for first_number_index, first_number := range nums {
 		// second_number = target - firstNumber
 		second_number := target - first_number
