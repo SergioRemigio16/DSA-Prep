@@ -2,7 +2,7 @@ package main
 
 // n = number of words
 // s = word length
-// Time Complexity: O(n) * (O(s) + O(1)) + O(n) *O(s) = 2O(ns) = O(ns)
+// Time Complexity: O(n) * (O(s) + O(1)) + O(n) * O(1) = O(ns) + O(n) = O(ns)
 // Space Complexity: O(n) * O(1) + O(n) = 2O(n) = O(n)
 func groupAnagrams(strs []string) [][]string {
 	// Every key contains all words that are anagrams
@@ -20,7 +20,7 @@ func groupAnagrams(strs []string) [][]string {
 		// Space : O(1)
 		for _, rune := range word {
 			// increase the number of times this letter has appeared
-			arr[rune-97]++
+			arr[rune-'a']++
 		}
 		// Time: O(1)
 		anagramMap[arr] = append(anagramMap[arr], word)
@@ -29,7 +29,7 @@ func groupAnagrams(strs []string) [][]string {
 	// Time: O(n)
 	// Space: O(n)
 	for _, value := range anagramMap {
-		// Time: O(s)
+		// Time: O(1)
 		// Space: O(1)
 		solutionArray = append(solutionArray, value)
 	}
