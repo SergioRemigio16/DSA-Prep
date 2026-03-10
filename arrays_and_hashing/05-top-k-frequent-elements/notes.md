@@ -55,7 +55,5 @@ Where this concept appears in real systems:
 
 ChatGPT Examples:
 -Token frequency analysis when identifying common tokens in prompts or datasets.
-
 -Trending keyword detection in search engines or social media feeds.
-
 -Log aggregation systems identifying the most frequent error messages or events.
