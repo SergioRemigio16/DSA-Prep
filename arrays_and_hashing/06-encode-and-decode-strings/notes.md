@@ -54,6 +54,6 @@ What should I recognize faster next time: That empty strings still take up space
 SYSTEMS CONNECTION
 ------------------------------
 Where this concept appears in real systems ChatGPT Examples:
--Network protocols: Many protocols use length-prefixed messages to frame packets.
--Database storage formats: Variable-length fields are stored using length prefixes.
--Serialization frameworks: Formats such as Protocol Buffers or Thrift use similar mechanisms to define message boundaries.
+- Network protocols: Many protocols use length-prefixed messages to frame packets.
+- Database storage formats: Variable-length fields are stored using length prefixes.
+- Serialization frameworks: Formats such as Protocol Buffers or Thrift use similar mechanisms to define message boundaries.
