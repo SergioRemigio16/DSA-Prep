@@ -1,6 +1,6 @@
 package main
 
-func getContcatenation(nums []int) []int {
+func getConcatenation(nums []int) []int {
 	n := len(nums)
 	ans := make([]int, 2*n)
 	for i := 0; i < n; i++ {
@@ -12,7 +12,7 @@ func getContcatenation(nums []int) []int {
 
 func main() {
 	input := []int{1, 4, 1, 2}
-	for _, number := range getContcatenation(input) {
+	for _, number := range getConcatenation(input) {
 		println(number)
 	}
 }
