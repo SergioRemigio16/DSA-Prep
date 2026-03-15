@@ -1,0 +1,1 @@
+Same thing as HashMap except the value in the doubly linked list is now a struct with fields key and value.
